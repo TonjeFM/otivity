@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+}
+#app {
+    height: 1560px;
+    width: 720px;
+    background-color: orange;
+    text-align: center;
+
+}
