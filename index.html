@@ -2,17 +2,37 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="index.css">
         <title>O-Tivity</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                background-color: black;
+            }
+            #app {
+                height: 1560px;
+                width: 720px;
+                background-color: orange;
+                text-align: center;
+            }
+
+
+        </style>
     </head>
     <body>
         <div id="app">
             <div id="logo">
                 <h1>O-tivity</h1>
             </div>
-            <div id="Login">
-                <button id="btnLogIn">Log In</button>
+            <div id="Login-button">
+                <button id="btnLogIn" onclick="location.href='login.html'">Logg Inn</button>
+
             </div>
+
         </div>
     </body>
 </html>

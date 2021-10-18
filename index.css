@@ -1,9 +1,8 @@
 body {
-    background-color: black;
     margin: 0;
     padding: 0;
-    border: none;
-    text-align: center;
+    border: 0;
+    width: 100%;
 }
 #app {
     height: 1560px;
