@@ -2,9 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="icon" href="img/logoOtivityV2.png">
+    <title>Otivity - Settings</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
 </head>
 <body>
+<div id="app">
+    <nav id="navbar">
+        <div id="menu">
+            <img id="menuImg" src="img/menu.png">
+        </div>
+        <div id="logo">
+            <img id="otivitylogo" src="img/logoOtivityV2.png">
+        </div>
+    </nav>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="menuitem">
+                <p onclick="location.href='profile.html'">Profile</p>
+            </div>
+            <div class="menuitem">
+                <p onclick="location.href='settings.html'">Settings</p>
+            </div>
+            <div class="menuitem">
+                <p onclick="location.href='index.html'">Log out</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="explore">
+
+    </div>
+
+    <div id="iconbar">
+        <div class="grid-container">
+            <div class="grid-item" id="itemexplore">
+                <div class ="iconmenu">
+                    <img src="img/explore.png" onclick="location.href='explore.html'">
+                </div>
+            </div>
+            <div class="grid-item" id="itemmap">
+                <div class ="iconmenu">
+                    <img src="img/map.png" onclick="location.href='map.html'">
+                </div>
+            </div>
+            <div class="grid-item" id="itemcalendar">
+                <div class ="iconmenu">
+                    <img src="img/calendar.png" onclick="location.href='calendar.html'">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="modal.js"></script>
 </body>
 </html>

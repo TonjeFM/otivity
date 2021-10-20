@@ -3,11 +3,44 @@ body {
     padding: 0;
     border: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: "Century Gothic", sans-serif;
 }
 #app {
-    height: 1560px;
+    height: 965px;
     width: 720px;
-    background-color: orange;
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
+}
+#logo {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding-top: 100px;
+}
+img {
+    width: 350px;
+    height: 350px;
+}
+.btnLogIn {
+    width: 350px;
+    height: 75px;
+    font-size: 20px;
+    font-weight: lighter;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 75px;
+    color: #FF5F6D ;
+    text-align: center;
+}
+.btnLogIn:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
 
 }

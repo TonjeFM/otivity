@@ -2,113 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>O-Tivity - Utforsk</title>
+    <link rel="icon" href="img/logoOtivityV2.png">
+    <title>Otivity - Explore</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        background-color: black;
-        font-family: "Century Gothic", sans-serif;
-      }
-      #app {
-        height: 1560px;
-        width: 720px;
-        background-color: orange;
-        text-align: center;
-      }
-      #navbar {
-        position:fixed;
-        background-color: white;
-        width: 720px;
-        height: 100px;
-        top: 0;
-      }
-      #iconbar {
-        position:fixed;
-        background-color: white;
-        width: 720px;
-        height: 100px;
-        bottom: 0;
-      }
-      #menu {
-        width:50px;
-        height: 50px;
-        float: left;
-        padding-top: 25px;
-        padding-left: 25px;
-      }
-      #menuImg {
-        width: 100%;
-        height: 100%;
-      }
-      #menuImg:hover {
-        cursor:pointer;
-      }
-      #logo {
-        text-align: center;
-      }
-      .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        width: 100%;
-        height: 100px;
-      }
-      .iconmenu {
-        height: 100px;
-        width: 240px;
-        text-align: center;
-        padding-top: 15px;
-      }
       #itemexplore{
         background-color: lightgrey;
-      }
-      img {
-        height: 70px;
-        width: 70px;
-      }
-      /* The Modal (background) */
-      .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        width: 720px; /* Full width */
-        height: 1560px; /* Full height */
-        z-index: 1;
-        background-color: rgb(255,255,255); /* Fallback color */
-        background-color: rgba(255,255,255,0.4); /* Black w/ opacity */
-        justify-content: center;
-      }
-      /* Modal Content */
-      .modal-content {
-        background-color: white;
-        margin: 0;
-        border: 1px solid white;
-        width: 50%;
-        height: 1560px;
-      }
-      .menuitem {
-        height: 100px;
-        width: 100%;
-        text-align: center;
-        margin-top: 100px;
-        border-top: 1px solid lightgrey;
-      }
-      .menuitem:hover {
-        cursor: pointer;
-      }
-      /* The Close Button */
-      .close {
-        color: black;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        padding: 10px;
-      }
-      .close:hover {
-        cursor:pointer;
       }
     </style>
   </head>
@@ -119,7 +18,7 @@
           <img id="menuImg" src="img/menu.png">
         </div>
         <div id="logo">
-          <h1>O-Tivity</h1>
+          <img id="otivitylogo" src="img/logoOtivityV2.png">
         </div>
       </nav>
 
@@ -130,13 +29,13 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <div class="menuitem">
-            <p onclick="location.href='profile.html'">Profil</p>
+            <p onclick="location.href='profile.html'">Profile</p>
           </div>
           <div class="menuitem">
-            <p onclick="location.href='settings.html'">Innstillinger</p>
+            <p onclick="location.href='settings.html'">Settings</p>
           </div>
           <div class="menuitem">
-            <p onclick="location.href='index.html'">Logg ut</p>
+            <p onclick="location.href='index.html'">Log out</p>
           </div>
         </div>
 
@@ -167,32 +66,6 @@
 
       </div>
     </div>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("menuImg");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
+    <script src="modal.js"></script>
   </body>
 </html>
