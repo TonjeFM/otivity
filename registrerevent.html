@@ -5,6 +5,11 @@
   <link rel="icon" href="img/logoOtivityV2.png">
   <title>Otivity - Register event</title>
   <link rel="stylesheet" type="text/css" href="layout.css">
+  <style>
+    #eventreg{
+      padding-top: 200px;
+    }
+  </style>
 </head>
 <body>
 <div id="app">
@@ -36,8 +41,47 @@
 
   </div>
 
-  <div id="explore">
+  <div id="event">
+    <div id="eventreg">
+      <form>
+        <label for="nameevent">Name of event</label><br>
+        <input type="text" placeholder="Name of event" id="nameevent" name="nameevent" required><br>
 
+        <label for="Descp">Description</label><br>
+        <input type="text" placeholder="Description" id="Descp" name="Descp" required><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date"id="date" name="date" required><br>
+
+        <label for="time">Time:</label><br>
+        <input type="time"id="time" name="time" required><br>
+
+        <label>Alcoholic event:</label><br>
+        <input type="radio" id="aYes" name="aYes" value="Yes">
+        <label for="aYes">Yes</label>
+        <input type="radio" id="aNo" name="aNo" value="No">
+        <label for="aNo">No</label><br>
+
+        <label>Interests:</label><br>
+        <input type="checkbox" id="hobby1" name="hobby1" value="Gaming">
+        <label for="hobby1">Gaming</label><br>
+        <input type="checkbox" id="hobby2" name="hobby2" value="Sports">
+        <label for="hobby2">Sports</label><br>
+        <input type="checkbox" id="hobby3" name="hobby3" value="Food">
+        <label for="hobby3">Food</label><br>
+        <input type="checkbox" id="hobby4" name="hobby4" value="Science">
+        <label for="hobby4">Science</label><br>
+        <input type="checkbox" id="hobby5" name="hobby5" value="Håndarbeid">
+        <label for="hobby5">Håndarbeid</label><br>
+        <label for="capacity">Capacity:</label>
+        <input type="number" id="capacity" name="capacity"><br>
+
+
+
+
+        <button type="submit" id="btnCreate">Create event</button>
+      </form>
+    </div>
   </div>
 
   <div id="iconbar">
