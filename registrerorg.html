@@ -3,8 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <title>Otivity - Register organization</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            font-family: "Century Gothic", sans-serif;
+        }
+        #app {
+            height: 965px;
+            width: 720px;
+            background: #FF5F6D;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            text-align: center;
+        }
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            width: 720px; /* Full width */
+            height: 1560px; /* Full height */
+            z-index: 1;
+            background-color: rgb(255,255,255); /* Fallback color */
+            background-color: rgba(255,255,255,0.4); /* Black w/ opacity */
+            justify-content: center;
+        }
+        /* Modal Content */
+        .modal-content {
+            background-color: white;
+            margin-top: 50%;
+            border: 1px solid white;
+            width: 100%;
+            height: 200px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        #btnExplore {
+            width: 150px;
+            height: 50px;
+            font-size: 15px;
+            font-weight: lighter;
+            background-color: transparent;
+            border: 1px solid #FF5F6D;
+            border-radius: 50px;
+            color: #FF5F6D ;
+            text-align: center;
+        }
+        #btnExplore:hover {
+            cursor: pointer;
+            border: 1px solid #FF5F6D;
+            background-color: #FF5F6D;
+            color: white;
+
+        }
+
+    </style>
 </head>
 <body>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+        <h1>Request sent!</h1>
+        <p>May take a few days</p>
+        <br>
+        <button id="btnExplore" onclick="location.href='explore.html'">Go to Explore</button>
+    </div>
+</div>
+<div id="app">
+    <div id="logo">
+        <h1>O-tivity</h1>
+    </div>
+    <div id="Login">
+        <form>
+            <label for="nameorg">Name of organization:</label><br>
+            <input type="text" placeholder="Name of organization" id="nameorg" name="nameorg" required><br>
+            <label for="email">Email:</label><br>
+            <input type="text" placeholder="Email" id="email" name="email" required><br>
+            <label for="stuprog">Study program:</label><br>
+            <input type="text" placeholder="Study program" id="stuprog" name="stuprog" required><br>
+            <button type="submit" id="btnReg">Register</button>
+        </form>
+    </div>
+
+</div>
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnReg");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+</script>
 </body>
 </html>
