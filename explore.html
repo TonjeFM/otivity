@@ -83,17 +83,16 @@
       }
       /* Modal Content */
       .modal-content {
-        background-color: #fefefe;
+        background-color: white;
         margin: 0;
-        border: 1px solid #888;
+        border: 1px solid white;
         width: 50%;
         height: 1560px;
       }
       .menuitem {
         height: 100px;
-        width: 50%;
-        text-align: left;
-        padding-left:100px;
+        width: 100%;
+        text-align: center;
         margin-top: 100px;
         border-top: 1px solid lightgrey;
       }
@@ -131,10 +130,10 @@
         <div class="modal-content">
           <span class="close">&times;</span>
           <div class="menuitem">
-            <p>Profil</p>
+            <p onclick="location.href='profile.html'">Profil</p>
           </div>
           <div class="menuitem">
-            <p>Innstillinger</p>
+            <p onclick="location.href='settings.html'">Innstillinger</p>
           </div>
           <div class="menuitem">
             <p onclick="location.href='index.html'">Logg ut</p>
@@ -151,17 +150,17 @@
         <div class="grid-container">
           <div class="grid-item" id="itemexplore">
             <div class ="iconmenu">
-              <img src="img/explore.png">
+              <img src="img/explore.png" onclick="location.href='explore.html'">
             </div>
           </div>
-          <div class="grid-item">
-            <div class ="iconmenu" id="itemmap">
-              <img src="img/map.png">
+          <div class="grid-item" id="itemmap">
+            <div class ="iconmenu">
+              <img src="img/map.png" onclick="location.href='map.html'">
             </div>
           </div>
-          <div class="grid-item">
-            <div class ="iconmenu" id="itemcalendar">
-              <img src="img/calendar.png">
+          <div class="grid-item" id="itemcalendar">
+            <div class ="iconmenu">
+              <img src="img/calendar.png" onclick="location.href='calendar.html'">
             </div>
           </div>
         </div>
